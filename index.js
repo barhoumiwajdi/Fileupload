@@ -3,7 +3,7 @@ const multer = require('multer');
 const cors = require('cors');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
-const File = require('./Model/Filamanger');
+const File = require('./Model/Filemanger');
 
 const upload = multer({ dest: 'uploads/' });
 

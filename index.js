@@ -21,15 +21,19 @@ app.post('/upload', upload.single('file'), (req, res) => {
     // Save the file details to the database
 
     try {
+
         const file = {
             name: req.file.originalname,
             path: req.file.path,
             size: req.file.size,
+
         };
+
         File.create(file)
         res.send({ message: 'uploaded ' })
     } catch (error) {
         res.status(500).send({ message: 'erreur serveur ' })
+
 
     }
 

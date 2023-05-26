@@ -4,7 +4,7 @@ const fileSchema = new mongoose.Schema({
     name: String,
     path: String,
     size: Number,
-    date: Date
+
     // Add more fields as needed
 });
 
